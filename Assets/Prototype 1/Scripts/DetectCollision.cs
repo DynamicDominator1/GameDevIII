@@ -14,9 +14,9 @@ public class DetectCollision : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other) // Called automatically when object's collider enters another object's trigger collider
     {
-        Destroy(gameObject);
-        Destroy(other.gameObject);
+        Destroy(gameObject); // Destory this object
+        Destroy(other.gameObject); // destroy the object that this object collided with
     }
 }
